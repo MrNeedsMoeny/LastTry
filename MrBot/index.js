@@ -168,8 +168,7 @@ const botconfig = require("./botconfig.json");
 
             if (card === 38) {
                 message.channel.send("KIng of Diamonds");
-            }
-
+          
             if (card === 39) {
                 message.channel.send("Queen of Diamonds");
             }
@@ -242,4 +241,4 @@ const botconfig = require("./botconfig.json");
   });
    
 
- client.login(botconfig.token);
+ client.login(process.env.BOT_TOKEN);
